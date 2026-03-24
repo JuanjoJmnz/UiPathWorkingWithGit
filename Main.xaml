@@ -117,6 +117,6 @@
       </uasc:AppendItemToCollection.Items>
     </uasc:AppendItemToCollection>
     <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Cities(&quot;France&quot;)]" DisplayName="Remove From Collection" sap:VirtualizedContainerService.HintSize="433.6,251.2" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_1" Item="Otra ciudad" RemoveAllElements="False" Result="[Cities(&quot;France&quot;)]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Ciudades de España: &quot; + String.Join(&quot;, &quot;, Cities(&quot;Spain&quot;)) + vbLf + &quot;Ciudades de Francia: &quot; + String.Join(&quot;, &quot;, Cities(&quot;France&quot;))]" />
+    <ui:LogMessage DisplayName="Log Message con ciudades" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Ciudades de España: &quot; + String.Join(&quot;, &quot;, Cities(&quot;Spain&quot;)) + vbLf + &quot;Ciudades de Francia: &quot; + String.Join(&quot;, &quot;, Cities(&quot;France&quot;))]" />
   </Sequence>
 </Activity>
