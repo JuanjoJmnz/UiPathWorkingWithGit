@@ -99,12 +99,20 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))">[New Dictionary(of String, List(Of String))]</InArgument>
       </Assign.Value>
     </Assign>
-    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" NextItems="{x:Null}" DisplayName="Build Collection de ciudades de España" FirstItem="Bornos" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_1" Result="[Cities(&quot;Spain&quot;)]" />
+    <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" DisplayName="Build Collection de ciudades de España" FirstItem="Bornos" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_1" Result="[Cities(&quot;Spain&quot;)]">
+      <uasc:BuildCollection.NextItems>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">Arcos de la Fra.</InArgument>
+          <InArgument x:TypeArguments="x:String">Jerez de la Fra.</InArgument>
+          <InArgument x:TypeArguments="x:String">Villamartín</InArgument>
+        </scg:List>
+      </uasc:BuildCollection.NextItems>
+    </uasc:BuildCollection>
     <uasc:BuildCollection x:TypeArguments="x:String" Items="{x:Null}" NextItems="{x:Null}" DisplayName="Build Collection de ciudades de Francia" FirstItem="Paris" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_2" Result="[Cities(&quot;France&quot;)]" />
     <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[Cities(&quot;Spain&quot;)]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="433.6,173.6" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
       <uasc:AppendItemToCollection.Items>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">Jerez de la frontera</InArgument>
+          <InArgument x:TypeArguments="x:String">Ubrique</InArgument>
         </scg:List>
       </uasc:AppendItemToCollection.Items>
     </uasc:AppendItemToCollection>
